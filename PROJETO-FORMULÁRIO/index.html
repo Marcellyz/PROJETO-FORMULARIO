@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda seu apartamento!</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>CADASTRE SEU APARTAMENTO PARA VENDER MAIS RÁPIDO!</h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>Formulário</p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">Venda fácil seu Apartamento!</h1>
+                <p class="text-transform">Informações do Vendedor:</p>
+                <form>
+                    <div class="box-input">
+                        <label for="salle-name">Nome Completo: <span class="required-field">*</span> </label>
+                        <input type="text" 
+                               name="salle-name"
+                               id="salle-name" 
+                               class="block"
+                               placeholder="Indique nome completo do vendedor" 
+                               minlength="1" 
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="address">Endereço:<span class="required-field">*</span> </label>
+                        <input type="text" 
+                               name="address"
+                               id="address" 
+                               class="block"
+                               placeholder="Defina o endereço do vendedor" 
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="telephone">Telefone:<span class="required-field">*</span> </label>
+                        <input type="number" 
+                               name="address"
+                               id="address" 
+                               class="block"
+                               placeholder="Informe o numero do celular do vendedor"> 
+                   </div>
+                    <div class="box-input">
+                        <label for="email">Insira o E-mail do vendedor:<span class="required-field">*</span> </label
+                        >
+                        <input type="email" 
+                               name="email"
+                               id="email" 
+                               class="block"
+                               value="email"
+                               placeholder="Digite o E-mail do vendedor" 
+                               required>
+                    </div>
+                    <p class="text-transform">Informações do Apartamento:</p>
+                    <div class="box-input">
+                        <label for="apartament-address">Endereço do apartamento à venda:<span class="required-field">*</span> </label>
+                        <input type="text" 
+                               name="apartament-address"
+                               id="apartament-address" 
+                               class="block"
+                               placeholder="Informe o endereço apartamento" 
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="price">Preço do apartamento:<span class="required-field">*</span> </label>
+                        <input type="number" 
+                               name="price"
+                               id="price" 
+                               step="0.01"
+                               min="0"
+                               placeholder="Exemplo:R$1.200,00" 
+                               class="block" 
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <label for="description"
+                          >Descrição do Apartamento:<span class="required-field">*</span></label
+                        >
+                        <textarea
+                          name="description"
+                          id="description"
+                          class="block"
+                          placeholder="Aqui você coloca os detalhes do apartamento, por exemplo: se ele tem banheiro e quarto"
+                        ></textarea>
+                      </div>
+                      <p class="text-transform">Condições de Venda:</p>
+                      <div class="box-input">
+                        <label for="delivery-date">Data de Entrega do Apartamento:<span class="required-field">*</span> </label>
+                        <input type="date" 
+                               name="delivery-date"
+                               id="delivery-date" 
+                               class="block" 
+                               required>
+                    </div>
+                    <div class="box-input">
+                        <p class="payment">Forma de Pagamento:<span class="required-field">*</span></p>
+                        <input type="radio" id="credit" name="gear">
+                        <label for="credit">Crédito</label>
+                        <input type="radio" id="debit" name="gear">
+                        <label for="debit">Débito</label>
+                        <input type="radio" id="in-cash" name="gear">
+                        <label for="in-cash">Em Dinheiro</label>
+                        <input type="radio" id="instant-transaction" name="gear">
+                        <label for="instant-transaction">PIX</label>
+                     </div>
+                     <div class="box-input">
+                        <p>Fotos do Apartamento: <span class="required-field">*</span></p>
+                        <input type="file" multiple accept="image/png, image/jpg" id="images" name="images" required>
+                     </div>
+                        <input type="submit" value="Enviar" class="btn-submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
